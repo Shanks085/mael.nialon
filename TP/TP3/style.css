@@ -43,5 +43,5 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
-    background-color: blueviolet;
+    background-color: azure;
 }
