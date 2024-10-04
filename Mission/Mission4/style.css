@@ -1,0 +1,88 @@
+body{
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    
+    
+}
+
+
+ .en_tete{
+    overflow: hidden;
+    color: #ffffff;
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+    
+}
+
+
+ .info{
+    margin-left: 25%;
+    float: left;
+ }
+
+
+ .mael{
+    height: 30%;
+    width: 10%;
+    float: right;
+    margin-right: 30%;
+    padding: 1%;
+ }
+
+ .date_de_naissance{
+    color: black;
+    font-weight: bold;
+ }
+
+ .block_2{
+    clear: both;
+ }
+
+ .séparation{
+    color: black;
+    clear: both;
+    width: 55%;
+    border-top: 8px solid #000000;
+    border-radius: 5px;
+    
+ }
+
+ .titre_hr  {
+    color: black;
+    clear: both;
+    width: 55%;
+ }
+
+ .titre {
+    margin-left: 25%;
+    font-weight: bold;
+ }
+
+ .date{
+    margin-left: 25%;
+    float: left;
+    font-weight: bold;
+ }
+
+ .paragraphe_1{
+    float:right;
+    margin-right: 25%;
+ }
+
+ .paragraphe_2{
+    float:right;
+    margin-right: 30%;
+ }
+
+ .paragraphe_3{
+    float:right;
+    margin-right: 36%;
+    margin: %;
+ }
+
+ .content{
+    border-style: groove;
+    border-color: #000000;
+    height: 120%;
+ }
