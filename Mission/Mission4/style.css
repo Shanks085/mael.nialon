@@ -1,8 +1,9 @@
 body{
     background-color: #ffffff;
     font-family: Arial, sans-serif;
-    
-    
+    margin-right: 10%;
+    margin-left: 10%;
+    background-color: #5b2c6f ;
 }
 
 
@@ -17,16 +18,16 @@ body{
 
 
  .info{
-    margin-left: 25%;
+    margin-left: 15%;
     float: left;
  }
 
 
  .mael{
     height: 30%;
-    width: 10%;
+    width: 20%;
     float: right;
-    margin-right: 30%;
+    margin-right: 15%;
     padding: 1%;
  }
 
@@ -42,7 +43,7 @@ body{
  .séparation{
     color: black;
     clear: both;
-    width: 55%;
+    width: 75%;
     border-top: 8px solid #000000;
     border-radius: 5px;
     
@@ -51,38 +52,42 @@ body{
  .titre_hr  {
     color: black;
     clear: both;
-    width: 55%;
+    width: 75%;
  }
 
  .titre {
-    margin-left: 25%;
+    margin-left: 15%;
     font-weight: bold;
  }
 
  .date{
-    margin-left: 25%;
+    margin-left: 15%;
     float: left;
     font-weight: bold;
  }
 
  .paragraphe_1{
     float:right;
-    margin-right: 25%;
+    margin-right: 15%;
  }
 
  .paragraphe_2{
     float:right;
-    margin-right: 30%;
+    margin-right: 22%;
  }
 
  .paragraphe_3{
     float:right;
-    margin-right: 36%;
-    margin: %;
+    margin-right: 26%;
  }
 
  .content{
     border-style: groove;
+    border: solid;
     border-color: #000000;
-    height: 120%;
+    margin-left: 10%;
+   height: 1300px;
+   width: 1000px;
+   background-color: white;
  }
+
