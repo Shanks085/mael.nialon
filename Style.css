@@ -1,13 +1,15 @@
 body{
     font-family: Arial, sans-serif;
-    background-color:#2e86c1;
-    margin: 0;
-    padding: 0;
-    
+    background-color: deepskyblue;
+    margin: 0%;
+    padding: 0%;
 }
+
+
 
 h1{
     text-align: center;
+    padding: 1%;
 }
 
 .en_tete{
