@@ -6,7 +6,6 @@ body{
 }
 
 
-
 h1{
     text-align: center;
     padding: 1%;
@@ -18,20 +17,28 @@ h1{
 }
 
 .en_tete a{
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 16px 14px;
+  text-decoration: none;
+}
 
-.TP , .Mission{
+nav ul{
+  display: none;
+}
+
+.html_css , .java, .php , .bdd, .Mission {
     float: left;
     overflow: hidden;
 }
 
-.TP .bouton_tp , .Mission .bouton_mission{
+nav>ul {
+  list-style-type: none;
+}
+
+.html_css .bouton_css , .Mission .bouton_mission , .java .bouton_java , .php .bouton_php, .bdd .bouton_bdd{
     font-size: 16px;
     border: none;
     outline: none;
@@ -42,11 +49,12 @@ h1{
     margin: 0;
 }
 
-.en_tete a:hover, .TP:hover .bouton_tp ,.Mission:hover .bouton_mission{
+.en_tete a:hover, .html_css:hover .bouton_css ,.Mission:hover .bouton_mission ,.java:hover .bouton_java ,.php:hover .bouton_php,.bdd:hover .bouton_bdd {
     background-color:#1b4f72;
+    transition: 0.1s;
   }
 
-.lien_tp, .lien_mission {
+.lien_tp, .lien_mission ,.lien_bdd, .lien_php, .lien_java{
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -55,7 +63,7 @@ h1{
     z-index: 1;
   }
 
- .lien_tp a, .lien_mission a{
+ .lien_tp a, .lien_mission a, .lien_bdd a, .lien_java a,.lien_php a{
     float: none;
     color: black;
     padding: 12px 16px;
@@ -64,10 +72,11 @@ h1{
     text-align: left;
   }
 
-  .lien_tp a:hover , .lien_mission a:hover {
+  .lien_tp a:hover , .lien_mission a:hover, .lien_bdd a:hover ,.lien_java a:hover,.lien_php a:hover{
     background-color: #ddd;
   }
 
-  .TP:hover .lien_tp , .Mission:hover .lien_mission{
+  .html_css:hover .lien_tp , .Mission:hover .lien_mission,.bdd:hover .lien_bdd,.java:hover .lien_java,.php:hover .lien_php{
     display: block;
   }
+
