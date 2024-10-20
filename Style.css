@@ -1,6 +1,6 @@
 body{
     font-family: Arial, sans-serif;
-    background: url(image/épe.gif);
+    background-color: darkturquoise;
     background-repeat: no-repeat;
     background-size:  1540px 710px;
     padding: 0%;
@@ -108,55 +108,4 @@ nav li ul{
 h1{
   text-align: center;
   padding: 1%;
-}
-
-
-
-
-/*
-h1{
-  text-align: center;
-  padding: 1%;
-}
-
-nav{
-  overflow: hidden;
-  background-color: black;
-
-}
-
-nav a{
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 16px 14px;
-  text-decoration: none;
-}
-
-
-nav ul{
-  list-style-type:none;
-}
-
-nav > ul > li > ul{
-  display: none;
-}
-
-.menu-html:hover{
-  border-top: 5px solid rgb(8, 225, 200);
-  background-color: cadetblue;
-}
-
-nav > ul > li {
-  float: left;
-  position: relative;
-}
-nav > ul::after{
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.sous-menu :hover {
-  background-color: blueviolet;
 }
