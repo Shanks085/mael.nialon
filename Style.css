@@ -16,6 +16,7 @@ nav input[type= checkbox]:checked ~ ul{
   display: block;
 } 
 
+
 @media screen and (max-width:680px) {
   .menu{
     display: block;
