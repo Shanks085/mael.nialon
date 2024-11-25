@@ -1,0 +1,74 @@
+body{
+    background-color: blue;
+    text-align: center;
+}
+
+.tableau {
+    background-color: darkblue;
+    width: 1000px;
+    height: 500px;
+    border-radius: 20px;
+    border:  2px solid black;
+    margin : 5%;
+    padding: auto;
+}
+
+
+
+button{
+    width: 120px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 26px;
+    color: white;
+    font-size: 1.5em;
+    margin: 30px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: rgb(0, 0, 0) ;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    transition: 150ms;
+}
+
+input.t{
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    border: 2 solid black;
+    color: black;
+    border-radius: 10px;
+    font-size: 2em;
+    margin: 5px;
+    font-family: Verdana;
+    text-align: center;
+    
+}
+
+input.t34{
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    border: 2 solid black;
+    color: black;
+    border-radius: 10px;
+    font-size: 2em;
+    margin: 5px;
+    font-family: Verdana;
+    text-align: center;
+}
+
+input.t35{
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    border: 2 solid black;
+    color: black;
+    border-radius: 10px;
+    font-size: 2em;
+    left: 40px; 
+    font-family: Verdana;
+    text-align: center;
+}
