@@ -15,6 +15,8 @@
 
         <a href="../../index.html" class="retour">retour</a>
     </nav>
+    
+    <!--titre execice div 1-->
 
     <div class="div1">
         
@@ -22,11 +24,15 @@
         
         <hr>
 
+        <!--execice div 2-->
+
         <div class="div2">
 
             <h2>1.Somme</h2>
 
             <p>ecrire une fonction qui prend deux nombres</p>
+
+            <!--text interactif-->
 
             <input type="number" placeholder="nombres" name="A1" id="A1"> 
             +
@@ -34,8 +40,27 @@
             =
             <input type="text" placeholder="resultat" name="r3" id="r1" readonly="">
 
-            <button>Voir la solution</button>
+            <!-- boutton -->
+
+            <button id="o1" name="o1" onclick="code1()">Voir la solution</button>
             <button onclick="addition()">voir la démonstration</button>
+
+            <!--solution div 3-->
+
+            <div class="div3" id="js1" name="js1">
+
+                <p> 
+                    addition(){<br>
+                    var a = document.getElementById("A1").value;<br>
+                    var b = document.getElementById("A2").value;<br>
+                    var c = Number(a)+Number(b);
+                
+                    r1.value = c;<br>
+                }
+                </p>
+                <button id="f1" name="f1" onclick="code1()">fermer</button>
+
+            </div>
 
         </div>
 
@@ -46,8 +71,24 @@
             
             <input type="text" placeholder="1 à 10" name="r2" id="r2" readonly="">
 
-            <button>Voir la solution</button>
+            <button id="o2" name="o2" onclick="code2()">Voir la solution</button>
             <button onclick="aléatoire()">voir la démonstration</button>
+
+            <div class="div3" id="js2" name="js2">
+
+                <p> 
+                    function aléatoire(){<br>
+                    <br>
+                        c = Math.floor(Math.random()*11) <br>
+                    <br>
+                         r2.value = c;<br>
+                    <br>
+                    }  
+                </p>
+                <button id="f2" name="f2" onclick="code2()">fermer</button>
+
+            </div>
+
         </div>
         
         <div class="div2">
@@ -61,9 +102,363 @@
             =
             <input type="text" placeholder="le plus grand" name="r3" id="r3" readonly="">
 
-            <button>Voir la solution</button>
+            <button id="o3" name="o3" onclick="code3()">Voir la solution</button>
             <button onclick="Chiffre()">voir la démonstration</button>
+
+            <div class="div3" id="js3" name="js3">
+
+                <p> 
+                    function Chiffre(){<br>
+                        var a = document.getElementById("G1").value;<br>
+                        var b = document.getElementById("G2").value;<br>
+                        <br>
+                        const nombres = [a,b];<br>
+                        const max = Math.max (...nombres);<br>
+                    <br>
+                        r3.value = max;<br>
+                        
+                    } 
+                </p>
+                <button id="f3" name="f3" onclick="code3()">fermer</button>
+
+            </div>
         </div>
+
+        <div class="div2">
+            <h2>4. nombre de lettre</h2>
+
+            <p>écrire une fonction qui retoune le nombres de caractere</p>
+
+            <input type="text" placeholder="mot" id="M1" name="M1">
+            =
+            <input type="text" placeholder="nobres de lettre" readonly="" name="r4" id="r4">
+
+            
+            <button id="o4" name="o4" onclick="code4()">Voir la solution</button>
+            <button onclick="nombres()">voir la démonstration</button>
+
+            <div class="div3" id="js4" name="js4">
+                <p>
+                    function nombres(){ <br>
+                        let a = document.getElementById("M1").value <br>
+                        let b = a.toString(); <br>
+                        let c = b.length; <br>
+                     <br>
+                        r4.value = c; <br>
+                    }
+                </p>
+                <button id="f4" name="f4" onclick="code4()">fermer</button>
+            </div>
+            
+        </div>
+
+        <div class="div2">
+
+            <h2>5. nombres de jours</h2>
+
+            <p>écrire une fonction qui retoune le nombres de jours</p>
+            <input type="date" placeholder="date debut" id="D1" name="D1">
+
+            <input type="date" placeholder="date fin" id="D2" name="D2">
+            =
+            <input type="text" placeholder="nombre de jour" id="r5" name="r5" readonly="">
+        
+            <button id="o5" name="o5" onclick="code5()">Voir la solution</button>
+            <button onclick="date()">voir la démonstration</button>
+
+            <div class="div3" id="js5" name="js5">
+                <p>
+                    function date(){ <br>
+                        let a = document.getElementById("D1").value;  <br>
+                        let date1 = new Date(a) <br>
+                        let b = document.getElementById("D2").value; <br>
+                        let date2 = new Date(b) <br>
+                        let c = date2-date1 <br>
+                    <br>
+                        let d = c /(1000 * 60 * 60 * 24) <br>
+                    <br>
+                        r5.value = d; <br>
+                    } 
+                </p>
+                <button id="f5" name="f5" onclick="code5()">fermer</button>
+            </div>
+
+        </div>
+
+        <div class="div2">
+            <h2>6. Convertir heure en minute</h2>
+
+            <p>écrire une fonction qui retourne en minute</p>
+
+            <input type="number" placeholder="heure" id="h1" name="p1">
+
+            <input type="text" placeholder="minute" id="r6" name="r6" readonly="">
+            
+            <button id="o6" name="o6" onclick="code6()">Voir la solution</button>
+            <button onclick="minute()">voir la démonstration</button>
+
+            <div class="div3" id="js6" name="js6">
+                <p>
+                    function minute(){ <br>
+                        var a = document.getElementById("h1").value; <br>
+                        var c = Number(a)*60 <br>
+                    <br>
+                        r6.value = c; <br>
+                    }
+                </p>
+                <button id="f6" name="f6" onclick="code6()">fermer</button>
+            </div>
+        </div>
+
+        <div class="div2">
+            <h2>7. salutation</h2>
+            
+            <p>écrire une fonction qui retoune une salutation avec prénom</p>
+
+            <input type="text" placeholder="Prénom" id="s1" name="s1">
+
+            <input type="text" placeholder="Nom" id="s2" name="s2">
+            <br>
+            <input type="text" placeholder="salutation" id="r7" name="r7" readonly="" class="salutation">
+
+            <button id="o7" name="o7" onclick="code7()">Voir la solution</button>
+            <button onclick="salut()">voir la démonstration</button>
+
+            <div class="div3" id="js7" name="js7">
+                <p>
+                    function salut(){ <br>
+                        let a = document.getElementById("s1").value; <br>
+                        let b = document.getElementById("s2").value; <br>
+                        let c = ("bonjour "+a+" "+b+" comment ça va ?") <br>
+                    <br>
+                        r7.value = c; <br>
+                    }
+                </p>
+                <button id="f7" name="f7" onclick="code7()">fermer</button>
+            </div>
+
+        </div>
+
+        <div class="div2">
+            <h2>8. Mot de passe</h2>
+
+            <p> écrire une fonction avec des mot de passe </p>
+
+            <input type="text" placeholder="User" id="mdp1" name="mdp1">
+
+            <input type="password" placeholder="password" id="mdp2" name="mdp2">
+            <br>
+            <input type="text " id="r8" name="r8" placeholder="..." readonly="">
+            
+            
+            <button id="o8" name="o8" onclick="code8()">Voir la solution</button>
+            <button onclick="motdepasse()">voir la démonstration</button>
+
+            <div class="div3" id="js8" name="js8">
+                <p> 
+                    function motdepasse(){ <br>
+                        var login=document.getElementById("mdp1").value; <br>
+                        var mdp=document.getElementById("mdp2").value; <br>
+                        var c =  (login=="admin" && mdp=="admin" ? "Valide": "Incorrecte" ); <br>
+                    <br>
+                        r8.value = c;<br>
+                            
+                    }
+                </p>
+                <button id="f8" name="f8" onclick="code8()">fermer</button>
+            </div>
+
+        </div>
+
+        <div class="div2">
+            <h2>9. Convertir une température</h2>
+
+            <p> écrire une fonction qui convertir °C en °F</p>
+
+            <input type="number" placeholder="°C" id="t1" name="t1">
+            =
+            <input type="number" placeholder="°F" id="t2" name="t2" readonly="">
+
+            <button id="o9" name="o9" onclick="code9()">Voir la solution</button>
+            <button onclick="temperature()">voir la démonstration</button>
+
+            <div class="div3" id="js9" name="js9">
+                <p>
+                    function temperature(){ <br>
+                        var a = document.getElementById("t1").value;  <br>
+                        var c = (Number(a)*9/5) + 32 <br>
+                    <br>
+                        t2.value = c; <br>
+                    } 
+                </p>
+
+                <button id="f9" name="f9" onclick="code9()">fermer</button>
+            </div>
+        </div>
+
+        <div class="div2">
+            <h2>10. nombre de mots dans une phrase</h2>
+
+            <p> écrire une fonction qui copte les mot</p>
+
+            <textarea type="text" id="n1" name="n1" class="texte"></textarea>
+            <br>
+            <input type="text" placeholder="nombrex de mots" id="r10" name="r10" readonly="" >
+            
+            <button id="o10" name="o10" onclick="code10()">Voir la solution</button>
+            <button onclick="mot()">voir la démonstration</button>
+
+            <div class="div3" id="js10" name="js10">
+                <p>
+                    function mot(){ <br>
+                        let a = document.getElementById("n1").value; <br>
+                        const b = a === "" ? 0 : a.split(/\s+/).length; <br>
+                    <br>
+                        r10.value = b; <br>
+                    } 
+                </p>
+                <button id="f10" name="f10" onclick="code10()">fermer</button>
+            </div>
+
+        </div>
+
+        <div class="div2">
+            <h2>11. produit en croix</h2>
+
+            <p>écris une fonction qui fait le calcul en produit en croix</p>
+
+            <input type="number" id="c1" name="c1" placeholder="nombre">
+            <input type="number" id="c2" name="c2" placeholder="nobres">
+            <br>
+            <input type="number" id="c3" name="c3" placeholder="nobres">
+            <input type="text" id="r11" name="r11" placeholder="resultat" readonly="">
+            
+            <button id="o11" name="o11" onclick="code11()">Voir la solution</button>
+            <button onclick="produit()">voir la démonstration</button>
+
+            <div class="div3" id="js11" name="js11">
+                <p>
+                    function produit(){ <br>
+                        var a = document.getElementById("c1").value; <br>
+                        var b = document.getElementById("c2").value; <br>
+                        var c = document.getElementById("c3").value; <br>
+                    <br>
+                        var d = Number(b)*Number(c) <br>
+                        var e = Number(d)/Number(a) <br>
+                    <br>
+                        r11.value = e; <br>
+                        
+                    }
+                </p>
+                <button id="f11" name="f11" onclick="code11()">fermer</button>
+            </div>
+
+        </div>
+
+        <div class="div2">
+            <h2>12. pair et impair</h2>
+
+            <p>écrire une fonction qui dit impair ou pair</p>
+
+            <input type="number" id="p1" name="p1" placeholder="nombres">
+
+            <input type="text" id="r12" name="r12" placeholder="pair ou impair" readonly="">
+
+            <button id="o12" name="o12" onclick="code12()">Voir la solution</button>
+            <button onclick="pair()">voir la démonstration</button>
+
+            <div class="div3" id="js12" name="js12">
+                <p> 
+                    function pair(){ <br>
+                    <br>
+                        var a = document.getElementById("p1").value; <br>
+                        var c = (Number(a) % 2===0 ? "pair" : "impair"); <br>
+                    <br>
+                        r12.value = c; <br>
+                    }
+                </p>
+                <button id="f12" name="f12" onclick="code4()">fermer</button>
+            </div>
+
+        </div>
+
+        <div class="div2">
+            <h2>13.Convertir des M en KM </h2>
+
+            <p>écrire une fonction qui Convertir des M en KM</p>
+
+            <input type="number" id="KM1" name="KM1" placeholder="Metre">
+
+            <input type="text" id="r13" name="r13" placeholder="KM" readonly="">
+
+            <button id="o13" name="o13" onclick="code13()">Voir la solution</button>
+            <button onclick="metre()">voir la démonstration</button>
+
+            <div class="div3" id="js13" name="js13">
+                <p> 
+                    function metre(){ <br>
+                        var a = document.getElementById("KM1").value; <br>
+                        var c = Number(a)*1000;<br>
+                    <br>
+                        r13.value = c; <br>
+                    }
+                </p>
+                <button id="f13" name="f13" onclick="code4()">fermer</button>
+            </div>
+
+        </div>
+
+        <div class="div2">
+            <h2>14. Convertir des KM en M</h2>
+
+            <p> écrire une fonction qui convertir des KM en miles</p>
+
+            <input type="number" id="mi1" name="mi1" placeholder="KM">
+            =
+            <input type="text" id="r14" name="r14" placeholder="Miles" readonly="">
+
+            <button id="o14" name="o14" onclick="code14()">Voir la solution</button>
+            <button onclick="miles()">voir la démonstration</button>
+
+            <div class="div3" id="js14" name="js14">
+                <p> 
+                    function miles(){ <br>
+                        var a = document.getElementById("mi1").value; <br>
+                        var c = Number(a)*0.621371; <br>
+                    <br>
+                        r14.value = c; <br>
+                    }
+                </p>
+                <button id="f14" name="f14" onclick="code4()">fermer</button>
+            </div>
+        </div>
+
+        <div class="div2">
+            <h2>15. Convertir des euro en dollar</h2>
+
+            <p>écris une fonction qui convertir les euro en dollar</p>
+
+            <input type="number" id="e1" name="e1" placeholder="euro">
+            =
+            <input type="text" id="r15" name="r15" placeholder="dollar" readonly="">
+
+            <button id="o15" name="o15" onclick="code15()">Voir la solution</button>
+            <button onclick="dolar()">voir la démonstration</button>
+
+            <div class="div3" id="js15" name="js15">
+                <p> 
+                    function dolar(){ <br>
+                        var a = document.getElementById("e1").value; <br>
+                    <br>
+                        var c = Number(a)*1.05; <br>
+                    <br>
+                        r15.value = c; <br>
+                    }
+                </p>
+                <button id="f15" name="f15" onclick="code4()">fermer</button>
+            </div>
+        </div>
+
     </div>
 
     <!--bar du bas-->

@@ -2,7 +2,7 @@ body{
    margin: 0%;
    font-family: Arial, sans-serif;
 }
-
+/*bouton , nav ,footer*/
 nav{
     background-color: mediumturquoise;
     padding: 1%;
@@ -29,11 +29,11 @@ footer{
     padding: 1%;
     margin-top: 1%;
 }
-
+ /*div 1*/
 .div1{
     margin: 0 auto;
     width: 900px;
-    height: 700px;
+    height: 2980px;
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 5px 9px 9px rgba(124, 123, 123, 0.436);
     border-radius: 5px;
@@ -46,6 +46,8 @@ hr{
     
 }
 
+/*div 2*/
+
 .div2{
     background-color: rgba(231, 231, 231, 0.493);
     margin: 0 auto;
@@ -54,5 +56,31 @@ hr{
     height: 170px;
     border: 1px solid;
     border-radius: 5px;
+}
+
+
+.salutation{
+    width: 337px;
+}
+
+.texte{
+    width: 500px;
+    height: 5 0px;
+}
+
+/*div 3*/
+.div3 {
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
 }
 
