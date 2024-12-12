@@ -1,9 +1,13 @@
 function corigé(){
-    window.location.href="corrigé.html"
+    const windowFeatures = "width=600,height=400,scrollbars=yes,resizable=yes";
+    const url = "corrigé.html";
+
+    window.open(url, "_blank", windowFeatures);
+    
 }
 
 function fermer(){
-    window.location.href="index.html"
+    window.close();
 }
 
 function effacer() {
