@@ -1,0 +1,111 @@
+body{
+    margin: 0%;
+    font-family: Arial, sans-serif;
+}
+
+nav{
+    
+    background-color: #50b6c8;
+    padding: 0%;
+    height: 190px;
+}
+
+
+.addresse{
+    float: left;
+    margin-left: 50px;
+}
+
+.facture{
+    float: right;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.hrf{
+    width: 100px;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    border: black;
+}
+
+.Destinataire{
+    float: left;
+    margin-left: 50px;
+    width: 600px;
+}
+
+
+.Envoyer{
+    float: right;
+    margin-right: 100px;
+    width: 600px;
+}
+
+.hrDE {
+    height: 1px;
+    width: 600px;
+    background-color: black;
+    border: black;
+}
+
+table{
+    border-collapse: collapse;
+    margin-left: 50px ;
+    margin-right: 100px;
+}
+
+td{
+    border: 2px solid black;
+}
+
+.DESCRiPTION {
+    width: 55%;
+    text-align: center;
+    background-color: rgb(0, 225, 255);;
+    color: rgb(0, 0, 0);
+}
+
+.total{
+    width: 30%;
+    background-color: rgb(0, 225, 255);
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.SOLDE{
+    float: right;
+    margin-right:100px;
+}
+
+.hrs{
+    width: 100px;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    border: black;
+}
+ 
+.divb{
+    margin-top: 16%;
+ }
+
+ .retour{
+    color: white;
+    text-decoration: none; 
+    padding: 10px 32px;
+    background-color: rgb(173, 6, 6);
+    
+}
+
+.retour:hover{
+    transition: 0.3s;
+    background-color: white;
+    color: rgb(173, 6, 6);
+}
+
+footer{
+    padding-top: 3%;
+    background-color: #50b6c8;
+    height: 160px;
+    text-align: center;
+}

@@ -2,10 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Facture</title>
 </head>
 <body>
+    <nav>
+        <div class="addresse">
+            <h2>M-DEV</h2>
+            <p>Adresse</p>
+        </div>
+        <div class="facture">
+            <h2>Facture</h2>
+            <p>2024-2025</p>
+            <hr class="hrf">
+            <p>08082005</p>
+            <hr class="hrf">
+        </div>
+    </nav>
+
+    <div class="Destinataire">
+        <h2>Destinataire</h2>
+        <hr class="hrDE">
+        <p>Nom: Nialon</p>
+        <p>Nom de la société: M-Banks</p>
+        <p>N° tel:</p>
+        <p>Mail: mnialon@mbanks.com</p>
+    </div>
+
+    <div class="Envoyer">
+        <h2>Envoyer à</h2>
+        <hr class="hrDE">
+        <p>Nom: Nialon</p>
+        <p>Nom de la société: Mael-Corp</p>
+        <p>N° tel:</p>
+        <p>Mail: mnialon@mcorp.com</p>
+    </div>
+
+    <table class="Tableau">
+        <tr>
+            <td class="DESCRiPTION">DESCRIPTION</td>
+            <td class="total">QUANTITÉ</td>
+            <td class="total">PRIX UNITAIRE</td>
+            <td class="total">TOTAL</td>
+        </tr>
+        <tr class="ligne">
+            <td><input type="text" class="input desc" placeholder="DESCRIPTION"></td>
+            <td><input type="number" class="input qte" placeholder="0"></td>
+            <td><input type="number" class="input prix" placeholder="0.00"></td>
+            <td><input type="number" class="input totali" placeholder="0.00" readonly></td>
+        </tr>
+    </table>
+
+    <div class="SOLDE">
+        <p>Sous-total: <span id="sousTotal">0.00</span></p>
+        <p>Remise: <span id="remise">0.00</span></p>
+        <p>Total après remise: <span id="totalRemise">0.00</span></p>
+        <p>Taux d'imposition: <span id="tauxTaxe">20</span>%</p>
+        <p>Taxe totale: <span id="taxeTotale">0.00</span></p>
+        <hr class="hrs">
+        <p>SOLDE DÛ: <span id="soldeDu">0.00</span></p>
+    </div>
     
+    
+
+    <div class="divb">
+        <button type="button" onclick="calcul()">Calculer</button>
+        <button type="button" onclick="ajouterLigne()">Ajouter une ligne</button>
+        <button type="button" onclick="remplirAuto()">Remplir automatiquement</button>
+        <button type="button" onclick="reinitialiser()">Annuler</button>
+    </div>
+
+    <footer>
+        <a href="../../index.html" class="retour">retour</a>
+        <h2>Mael NIALON</h2>
+        <h3>Mission 10</h3>
+    </footer>
 </body>
 </html>
