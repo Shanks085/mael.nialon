@@ -1,9 +1,13 @@
-body{
+
+
+body {
     margin: 0;
+    height: 0%;
     padding: 0;
-    background-image: url(image/panda_2.jpg);
-    background-size: cover ;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 690px;
-}
+    background-image:url(image/panda_2.jpg); /* Remplace par ton image */
+    background-size: 100% 100%; /* Étire l'image pour qu'elle couvre tout l'écran */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Pas de répétition */
+    height: 100vh; /* Hauteur de la fenêtre visible */
+    width: 100vw; /* Largeur de la fenêtre visible */
+  }
