@@ -23,6 +23,10 @@
   width: 300px;
 }
 
+.form-1 [type = text]{
+  margin-bottom:29px ;
+}
+
 
 .enregistrer{
   color: #9dcd5a;
