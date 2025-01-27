@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de choix avec images</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .choices-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .choice {
+            text-align: center;
+            width: 150px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .choice img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .choice:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        .choice p {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faites votre choix</h1>
+    <div class="choices-container">
+        <div class="choice" onclick="alert('Choix 1 sélectionné !')">
+            <img src="https://via.placeholder.com/150" alt="Choix 1">
+            <p>Choix 1</p>
+        </div>
+        <div class="choice" onclick="alert('Choix 2 sélectionné !')">
+            <img src="https://via.placeholder.com/150" alt="Choix 2">
+            <p>Choix 2</p>
+        </div>
+        <div class="choice" onclick="alert('Choix 3 sélectionné !')">
+            <img src="https://via.placeholder.com/150" alt="Choix 3">
+            <p>Choix 3</p>
+        </div>
+        <div class="choice" onclick="alert('Choix 4 sélectionné !')">
+            <img src="https://via.placeholder.com/150" alt="Choix 4">
+            <p>Choix 4</p>
+        </div>
+    </div>
+</body>
+</html>

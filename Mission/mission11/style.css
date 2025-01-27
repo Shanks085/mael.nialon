@@ -1,13 +1,220 @@
-
-
-body {
+.panda {
+  font-family: Arial, Helvetica, sans-serif;
+    background-image:url(image/panda_2.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh;
+    width: 100vw; 
     margin: 0;
-    height: 0%;
     padding: 0;
-    background-image:url(image/panda_2.jpg); /* Remplace par ton image */
-    background-size: 100% 100%; /* Étire l'image pour qu'elle couvre tout l'écran */
-    background-position: center; /* Centre l'image */
-    background-repeat: no-repeat; /* Pas de répétition */
-    height: 100vh; /* Hauteur de la fenêtre visible */
-    width: 100vw; /* Largeur de la fenêtre visible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+  /* Conteneur du formulaire */
+.form-1 {
+  background-color: #4747479f;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+}
+
+
+.enregistrer{
+  color: #9dcd5a;
+}
+
+.cubev{
+  background-color: #9dcd5a;
+  height: 20px;
+  width: 20px;
+}
+
+.form-1 input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  
+}
+
+.form-1 img{
+  background-color: #9dcd5a;
+  width: 35px;
+  height: 35px;
+  margin-right: 0px;
+  border: 3px solid black;
+}
+
+.form-1 div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+button{
+  background-color: #9dcd5a;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  color: white;
+  border: #9dcd5a;
+}
+
+button:hover{
+  background-color: white;
+  color: #9dcd5a;
+  transition: 0.4s;
+}
+
+.buttons{
+  text-align: center;
+  margin-left: 35%;
+  width: 100px;
+}
+
+/*choix*/
+
+.div-choix{
+  background-color: #4747479f;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 800px;
+  height: 400px;
+  border: 3px solid black; 
+  border-radius: 10px;
+}
+
+
+.patron{
+  margin-top: 15%;
+  height: 150px;
+  margin-left:90px ;
+  border: 3px solid black;
+  background-color: #4747479f;
+  border-radius: 10px;
+}
+
+.employer{
+  margin-top: 15%;
+  margin-right:90px ;
+  height: 150px;
+  border: 3px solid black;
+  background-color: #4747479f;
+  border-radius: 10px;
+}
+
+.employer:hover , .patron:hover{
+  background-color: #fefefe9f;
+  border-radius: 10px;
+  border: 3px solid black;
+  transition: 0.3s;
+}
+
+.retour{
+  background-color: red;
+  height: 70px;
+  margin-top: 5%;
+  border-radius: 10px;
+  border: 3px solid black;
+  transition: 0.3s;
+}
+
+.retour:hover{
+  background-color: rgb(255, 249, 249);
+  height: 70px;
+  margin-top: 5%;
+  border-radius: 10px; 
+  border: 3px solid black;
+  transition: 0.3s;
+}
+
+/*employer et patron*/
+
+.ep{
+  background-color: #46a435;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.inscription{
+  float: left;
+  height: 695px;
+  background-color: rgb(26, 26, 26);
+}
+
+.form-2{
+  float: left;
+  margin-left:0% ; 
+  text-align: center;
+  width: 1019px;
+}
+
+.form-2 h1{
+  text-align: center;
+}
+
+.form-2 .Prénom {
+  margin-left: 100px;
+  width: 35%;
+  height: 35px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  
+}
+
+.form-2 .NOM{
+  margin-right:  100px;
+  width: 35%;
+  height: 35px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-2 .ds{
+  text-align: center;
+  
+}
+
+.form-2 .ds input{
+  width: 40%;
+  height: 35px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-top: 30px;
+  flex-wrap: wrap;
+
+}
+
+.lp{
+  margin-top: 10px ;
+  
+}
+
+hr{
+  border: 2px solid black;
+  width: 550px ;
+  margin-top: 30px;
+}
+
+.form-2 .lp [type= password] , [type= text]{
+  width: 40%;
+  height: 90%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-top: 30px;
+  flex-wrap: wrap; 
+}
+
+
+
+.tigre{
+  height: 690px;
+  width: 500px;
+  
+}

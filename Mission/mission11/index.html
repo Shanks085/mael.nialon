@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulaire de connexion</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <form action="">
+<body class="panda">
+    <div class="form-1">
+        <h1>Se connecter</h1>
+        <form action="" method="post">
+            
+            <div>
+                <img src="image/user.png">
+                <input type="text"  name="Nom"  placeholder="Nom">
+            </div>
 
-        <input type="text" name="">
-
-        <input type="password" name="">
-
-        <button type="submit"></button>
-
-        <a href="choix.html"></a>
-    </form>
-    
+            <div>
+                <img src="image/mdp.png">
+                <input type="password" name="mdp"  placeholder="password">
+            </div>
+            
+            <div class="buttons">
+                <button type="submit">Login</button>
+            </div>
+            <p>Pas encore inscrit ? <a href="choix.html" class="enregistrer">S'enregistrer</a></p>
+        </form>
+    </div>
 </body>
 </html>
