@@ -38,7 +38,7 @@
   width: 20px;
 }
 
-.form-1 input {
+.form-1 input[type ="password"] , input[type = "text"] {
   width: 80%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -78,6 +78,10 @@ button:hover{
   text-align: center;
   margin-left: 35%;
   width: 100px;
+}
+
+.user{
+  margin-bottom: 29px;
 }
 
 /*choix*/
@@ -121,11 +125,11 @@ button:hover{
 }
 
 .retour{
-  background-color: red;
+  background-color: rgb(159, 4, 4);
   height: 70px;
   margin-top: 5%;
-  border-radius: 10px;
-  border: 3px solid black;
+  border-radius: 5px;
+  border: 2px solid black;
   transition: 0.3s;
 }
 
@@ -134,91 +138,6 @@ button:hover{
   height: 70px;
   margin-top: 5%;
   border-radius: 10px; 
-  border: 3px solid black;
-  transition: 0.3s;
-}
-
-/*employer et patron*/
-
-.ep{
-  background-color: #46a435;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.inscription{
-  float: left;
-  height: 695px;
-  background-color: rgb(26, 26, 26);
-}
-
-.form-2{
-  float: left;
-  margin-left:0% ; 
-  text-align: center;
-  width: 1019px;
-}
-
-.form-2 h1{
-  text-align: center;
-}
-
-.form-2 .Prénom {
-  margin-left: 100px;
-  width: 35%;
-  height: 35px;
-  padding: 5px;
-  border: 1px solid #ccc;
-  
-}
-
-.form-2 .NOM{
-  margin-right:  100px;
-  width: 35%;
-  height: 35px;
-  padding: 5px;
-  border: 1px solid #ccc;
-}
-
-.form-2 .ds{
-  text-align: center;
-  
-}
-
-.form-2 .ds input{
-  width: 40%;
-  height: 35px;
-  padding: 5px;
-  border: 1px solid #ccc;
-  margin-top: 30px;
-  flex-wrap: wrap;
-
-}
-
-.lp{
-  margin-top: 10px ;
-  
-}
-
-hr{
   border: 2px solid black;
-  width: 550px ;
-  margin-top: 30px;
-}
-
-.form-2 .lp [type= password] , [type= text]{
-  width: 40%;
-  height: 90%;
-  padding: 5px;
-  border: 1px solid #ccc;
-  margin-top: 30px;
-  flex-wrap: wrap; 
-}
-
-
-
-.tigre{
-  height: 690px;
-  width: 500px;
-  
+  transition: 0.3s;
 }
